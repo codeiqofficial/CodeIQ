@@ -1,0 +1,178 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeIQ</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+  <!-- AOS (Animate On Scroll) CSS CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+
+  <style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+  /* Modern dark theme scrollbar */
+  ::-webkit-scrollbar {
+  width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+  background: #cccccc;
+  /*  border-radius: 10px;*/
+  }
+
+  ::-webkit-scrollbar-thumb {
+  /*  background: linear-gradient(180deg, #4b6cb7, #182848);*/
+  border-radius: 0px;
+  border: 1px solid #262626;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+/*  background: linear-gradient(180deg, #ffffff, #000000);*/
+  }
+
+
+
+
+  html, body {
+  font-family: "Quicksand", sans-serif;
+  margin: 15px;
+  padding: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  }
+
+  .parallax-section {
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /*border-radius: 20px;*/
+  }
+
+  .overlay {
+/*  background-color: rgba(0, 0, 0, 0.9);*/
+  padding: 2rem;
+/*  border-radius: 10px;*/
+  }
+
+  .content-section {
+  padding: 60px 20px;
+  background-color: #f2f2f2;
+  }
+
+  h1 {
+  font-weight: 700;
+  }
+
+  h2 {
+  font-weight: 500;
+  }
+
+  .footer {
+  background-color: #f2f2f2;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  }
+
+  @media (max-width: 768px) {
+  .parallax-section-duple {
+  background-size: contain;      
+  background-position: center;
+  height: 250px;
+  background-repeat: no-repeat;                 
+  }
+  }
+  </style>
+  </head>
+
+  <body>
+
+
+  <!-- Section 1 -->
+  <section class="parallax-section">
+  <h1 class="text-dark" data-aos="fade-down" data-aos-delay="300">Hi,</h1>
+  <p class="text-dark mt-3" data-aos="fade-left" data-aos-delay="400">WE ARE THE TEAM OF <b>CODEIQ</b></p>
+  </section>
+
+  <!-- Section 2 -->
+  <section class="parallax-section parallax-section-duple" style="background-image: url('CodeIQ-logo1.png');"></section>
+
+  <!-- Content Section 2 -->
+  <section class="content-section text-center">
+  <div class="container">
+  <h2 data-aos="fade-right" data-aos-delay="300">CodeIQ</h2>
+  <p data-aos="fade-left" data-aos-delay="500">Boost your <b>Innovative Quotient</b> and turn ideas into impactful realities.</p>
+  </div>
+  </section>
+
+  <!-- Section 3 -->
+  <section class="parallax-section" style="background-image: url('bg1.jpg');">
+  <div class="overlay">
+  <p data-aos="fade-up" data-aos-delay="800"><i class="bi bi-quote" style="font-size: 35px;"></i> We are CodeIQ, a team of skilled freelancers founded in 2025, offering complete digital solutions under one roof — from website and app development to graphic design, domain & hosting services, SEO, and digital marketing. We build, design, and grow your online presence with creativity and expertise.</p>
+  </div>
+  </section>
+
+  <!-- Content Section 3 -->
+  <section class="content-section text-center">
+  <div class="container">
+  <h2 data-aos="fade-left" data-aos-delay="300">Services Offered</h2>
+  <p data-aos="fade-right" data-aos-delay="500">Here are the services we offer to help you grow your digital presence and achieve your business goals.</p>
+  </div>
+  </section>
+
+  <!-- Section 3 -->
+  <section class="parallax-section" style="background-image: url('bg2.jpg');">
+  <div class="overlay">
+  <h1 class="text-dark"></h1>
+  <p class="text-white" data-aos="fade-up" data-aos-delay="800">
+  <b><i class="bi bi-ui-checks-grid"></i> &nbsp;Website Development &nbsp;&nbsp;&nbsp;
+  <i class="bi bi-ui-checks-grid"></i> &nbsp;App Development &nbsp;&nbsp;&nbsp;
+  <i class="bi bi-ui-checks-grid"></i> &nbsp;Graphic Design &nbsp;&nbsp;&nbsp;
+  <i class="bi bi-ui-checks-grid"></i> &nbsp;Domain & Hosting &nbsp;&nbsp;&nbsp;<br>
+  <i class="bi bi-ui-checks-grid"></i> &nbsp;SEO &nbsp;&nbsp;&nbsp;
+  <i class="bi bi-ui-checks-grid"></i> &nbsp;Digital Marketing &nbsp;&nbsp;&nbsp;
+  </b>
+  </p>
+  </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" data-aos="fade-down" data-aos-delay="800">
+  <i class="bi bi-envelope"></i> codeiq@gmail.com&nbsp;&nbsp; <i class="bi bi-telephone"></i> +91 0000000000 <br>
+  &copy; 2025 CodeIQ. All rights reserved.
+  </footer>
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+   <!-- AOS (Animate On Scroll) JS CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 1200, // Animation duration (in ms)
+      once: true,     // Run animation once only
+    });
+  </script>
+
+  </body>
+  </html>
